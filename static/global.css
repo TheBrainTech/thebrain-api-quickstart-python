@@ -1,0 +1,149 @@
+body,
+input {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  background: #1f2937;
+  font-family:ui-sans-serif, system-ui, Roboto, "Segoe UI";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+input {
+  background: #313a47;
+  border: 1px solid #5f6a79;
+  color: #ffffff;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+ol {
+  list-style: auto;
+  padding: 0;
+}
+
+code {
+  padding: 0 0.25rem 0 0.25rem;
+  background: #313a47;
+  border-radius:0.25rem;
+  border: 1px solid #ffffff0f
+}
+
+hr {
+  margin-bottom: 1rem;
+  border-color: #6b7280;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+}
+
+.description {
+  margin-bottom: 2rem;
+}
+
+.createThoughtCard {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #4b5563;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.inputs-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.submit-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.submit-button {
+  font-size: 1rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.25rem;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition-property: color, background-color;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #2563eb;
+}
+
+.status-message {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.web-client {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  background-color: #1f2125;
+  border: 1px solid #4b5563;
+  border-radius: 0.5rem;
+}
+
+.success-message {
+  margin-top: 1rem;
+  text-align: center;
+  color: #22c55e;
+}
+
+.error-message {
+  margin-top: 1rem;
+  text-align: center;
+  color: #ef4444;
+}

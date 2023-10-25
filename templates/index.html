@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <title>TheBrain API Quickstart</title>
+  <link rel="favicon" href="{{ url_for('static', filename='favicon.ico') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}" />
+  <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+  <script src="{{ url_for('static', filename='requestHelper.js') }}"></script>
+</head>
+
+<body>
+  <div class="main-wrapper">
+
+    <div class="description">
+      <h3>Create New Thought</h3>
+      <hr/>
+      <ol>
+        <li>Log in to the embedded Web Client below with your TheBrain Account credentials.</li>
+        <li>Open a brain and activate a thought.</li>
+        <li>Right-click the thought and select <code>Open in New Tab</code>.</li>
+        <li>Copy the first Guid in the URL and paste into the <code>Brain ID</code> text entry on this page.</li>
+        <li>Copy the second Guid in the URL and paste into the <code>Source Thought ID</code> text entry on this page.</li>
+        <li>Fill in the <code>Name</code> and <code>Label</code> field for the thought to create.</li>
+        <li>Click <code>Create Thought</code> and watch the magic happen!</li>
+      </ol>
+    </div>
+
+    <form class="createThoughtCard" onsubmit="submitForm(event)">
+      <div class="inputs-wrapper">
+        <div class="input-section" style="padding-right: 1rem;">
+          <div style="margin-bottom:1rem;">
+            <h4>Brain ID</h4>
+            <input type="text" name="brainId" placeholder="Brain ID to create the new thought in" required/>
+          </div>
+
+          <div style="margin-bottom:1rem;">
+            <h4>Source Thought ID</h4>
+            <input type="text" name="srcThtId" placeholder="Thought ID to link the new thought to" required/>
+          </div>
+        </div>
+
+        <div class="input-section" style="padding-left: 1rem;border-left: 1px solid #6b7280;">
+          <div style="margin-bottom:1rem;">
+            <h4>New Thought Name</h4>
+            <input type="text" name="thtName" placeholder="Name of the new thought" required/>
+          </div>
+
+          <div style="margin-bottom:1rem;">
+            <h4>New Thought Label</h4>
+            <input type="text" name="thtLabel" placeholder="Label of the new thought"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="submit-row">
+        <button type="submit" class="submit-button">
+          Create Thought
+        </button>
+      </div>
+    </form>
+
+    <iframe src="https://app.thebrain.com" class="web-client"/>
+
+  </div>
+</body>
